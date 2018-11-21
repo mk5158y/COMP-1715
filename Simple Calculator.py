@@ -1,3 +1,6 @@
+run = True
+cont = ""
+
 def Add(num1, num2):
   print("Answer:", num1 + num2)
 
@@ -30,5 +33,13 @@ def Run():
   else:
     print("Incorrect option selected!")
 
-Run()
+while run == True:
+  Run()
+  cont = input("Use program again [Y/N]: ")
+  if cont == "Y" or cont == "y":
+    run == True
+  else:
+    run = False
+    print("End!")
+    exit
   
